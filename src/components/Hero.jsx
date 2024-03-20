@@ -1,21 +1,23 @@
 import React from 'react'
 import profilepic from '../assets/profilepic5.png'
-import { AiFillLinkedin, AiFillGithub, AiFillInstagram, AiFillFacebook } from 'react-icons/ai'
+import { AiFillLinkedin, AiFillGithub, AiFillFacebook } from 'react-icons/ai'
 import { TypeAnimation } from 'react-type-animation'
+import { motion } from "framer-motion";
+import { SectionWrapper } from "../hoc";
+import { zoomIn, slideIn } from '../utils/motion';
 
 const Hero = () => {
     return (
-        <div>
-            <div className='max-w-[1200px] h-[80vh] mx-auto
-            flex flex-col-reverse sm:flex-row justify-center align-center'>
-
+        <div className='max-w-[1200px] h-[80vh] mx-auto
+            flex flex-col-reverse sm:flex-row justify-center align-center' id='hero'>
+            <motion.div variants={zoomIn(0.2, 1)}>
                 <div className='flex-col my-auto mx-auto'>
                     <p className="md:text-5xl sm:text-4xl text-xl font-bold text-gray-200">Hi! I am Rue Ccarita</p>
                     <h1 className='md:text-7xl sm:text-6xl text-4xl font-bold md:py-6'>
                         <TypeAnimation sequence={[
                             "Frontend Dev",
                             1000,
-                            "Webdesigner",
+                            "Web designer",
                             1000,
                             "Consultant",
                             1000,
@@ -26,7 +28,7 @@ const Hero = () => {
                     </h1>
                     <div className='flex justify-center items-center'>
                         <p className='md:text-5xl sm:text-4xl text-xl font-bold text-gray-500'>
-                            with a 5+ years experience
+                            with a 1+ year experience
                         </p>
                     </div>
                     <div className='text-5xl flex justify-start gap-16 my-7 text-purple-600'>
@@ -48,13 +50,31 @@ const Hero = () => {
 
                     </div>
                 </div>
+            </motion.div>
+            <motion.div variants={zoomIn(0.2, 1)}>
                 <div className='my-auto'>
                     <img className='w-[300px] sm:w-[500px] mx-auto h-auto rounded-full' src={profilepic} alt="profile-pic" />
                 </div>
-
+            </motion.div>
+            <div className='absolute xs:bottom-10 bottom-36 w-full flex justify-center items-center'>
+                <a href='#about'>
+                    <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+                        <motion.div
+                            animate={{
+                                y: [0, 24, 0],
+                            }}
+                            transition={{
+                                duration: 1.5,
+                                repeat: Infinity,
+                                repeatType: "loop",
+                            }}
+                            className='w-3 h-3 rounded-full bg-white mb-1'
+                        />
+                    </div>
+                </a>
             </div>
         </div>
     )
 }
 
-export default Hero
+export default SectionWrapper(Hero, "hero");

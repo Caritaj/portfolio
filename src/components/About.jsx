@@ -20,18 +20,30 @@ const About = () => {
                         <div className="text-gray-300 my-3">
                             <h3 className="text-4xl font-semibold mb-5">About <span>Me</span></h3>
                             <p className="text-justify leading-7 w-11/12 mx-auto">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                Specialized in creating interactive and engaging user interfaces for web applications.💻
+                                Expert in HTML, CSS and JavaScript, with experience in frameworks such as Angular, React. 🎨 Passionate about design and user experience, always seeking to create products that are intuitive and visually attractive.
                             </p>
                         </div>
                     </div>
 
                     <div className="flex mt-10 items-center gap-7">
                         <div className="bg-[#333333]/40 p-5 rounded-lg">
-                            <h3 className="md:text-4xl text-2xl font-semibold text-white">11
+                            <h3 className="md:text-4xl text-2xl font-semibold text-white">4
                                 <span className='primary-text'>+</span>{' '}
                             </h3>
-                            <p><span className='md:text-base text-xs'>Projects</span></p>
+                            <p><span className='md:text-base text-xs'>projects</span></p>
+                        </div>
+                        <div className="bg-[#333333]/40 p-5 rounded-lg">
+                            <h3 className="md:text-4xl text-2xl font-semibold text-white">1
+                                <span className='primary-text'>+</span>{' '}
+                            </h3>
+                            <p><span className='md:text-base text-xs'>year experience</span></p>
+                        </div>
+                        <div className="bg-[#333333]/40 p-5 rounded-lg">
+                            <h3 className="md:text-4xl text-2xl font-semibold text-white">10
+                                <span className='primary-text'>+</span>{' '}
+                            </h3>
+                            <p><span className='md:text-base text-xs'>happy clients</span></p>
                         </div>
                     </div>
                 </div>
