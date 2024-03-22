@@ -3,6 +3,10 @@ import {
     tesla,
     ica,
     minam,
+    fondo1,
+    fondo2,
+    fondo3,
+    proj2
 } from "../assets";
 
 
@@ -62,4 +66,63 @@ const experiences = [
     },
 ];
 
-export { experiences };
+const menuItems = [
+    {
+        id: 1,
+        title: 'Home',
+        link: '#home'
+    },
+    {
+        id: 2,
+        title: 'About',
+        link: '#about'
+    },
+    {
+        id: 3,
+        title: 'Work',
+        link: '#work'
+    },
+    {
+        id: 4,
+        title: 'Experience',
+        link: '#experience'
+    },
+    {
+        id: 5,
+        title: 'Contact',
+        link: '#contact'
+    },
+]
+
+const work = [
+    {
+        id: 1,
+        title: 'data table',
+        link: 'https://sinia.minam.gob.pe/portal/dialogos-socioambientales/',
+        image: fondo3,
+        class: 'group h-48 overflow-hidden rounded-lg shadow-lg md:h-80',
+    },
+    {
+        id: 2,
+        title: 'sinia',
+        link: 'https://sinia.minam.gob.pe/',
+        image: fondo1,
+        class: 'group h-48 overflow-hidden rounded-lg shadow-lg md:col-span-2 md:h-80'
+    },
+    {
+        id: 3,
+        title: 'caja ica',
+        link: 'https://workflowproject.vercel.app/',
+        image: fondo2,
+        class: 'group h-48 overflow-hidden rounded-lg shadow-lg md:col-span-2 md:h-80'
+    },
+    {
+        id: 4,
+        title: 'gnsis',
+        link: 'https://github.com/Caritaj',
+        image: proj2,
+        class: 'group h-48 overflow-hidden rounded-lg shadow-lg md:h-80',
+    }
+]
+
+export { experiences, menuItems, work };

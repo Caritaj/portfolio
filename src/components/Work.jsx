@@ -1,9 +1,5 @@
 import React from 'react'
-import proj1 from '../assets/proj1.png'
-import proj2 from '../assets/proj2.png'
-import proj3 from '../assets/proj3.png'
-import fondo1 from '../assets/fondo1.png'
-import fondo2 from '../assets/fondo2.png'
+import { work } from '../constants'
 
 const Work = () => {
     return (
@@ -20,29 +16,15 @@ const Work = () => {
             </div>
 
             <div className="grid gap-4 grid-cols-2 sm:grid-cols-3 md:gap-6 xl:gap-8">
-
-                <a href="/" className="group h-48 overflow-hidden rounded-lg shadow-lg md:h-80">
-                    <img src={proj1} alt="" className="h-full w-full 
+                {
+                    work.map((item) => (
+                        <a key={item.id} href={item.link} target='_blank' rel="noreferrer"
+                            className={item.class}>
+                            <img src={item.image} alt={item.title} className="h-full w-full 
                         object-cover object-center transition duration-200 group-hover:scale-110" />
-                </a>
-
-                <a href="https://sinia.minam.gob.pe/" target="_blank" rel="noreferrer"
-                    className="group h-48 overflow-hidden rounded-lg shadow-lg md:col-span-2 md:h-80">
-                    <img src={fondo1} alt="" className="h-full w-full 
-                        object-cover object-center transition duration-200 group-hover:scale-110"/>
-                </a>
-
-                <a href="https://workflowproject.vercel.app/" target='_blank' rel='noreferrer'
-                    className="group h-48 overflow-hidden rounded-lg shadow-lg md:col-span-2 md:h-80">
-                    <img src={fondo2} alt="" className="h-full w-full 
-                        object-cover object-center transition duration-200 group-hover:scale-110" />
-                </a>
-
-                <a href="/" className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 
-                    shadow-lg md:h-80">
-                    <img src={proj2} alt="" className="h-full w-full 
-                        object-cover object-center transition duration-200 group-hover:scale-110" />
-                </a>
+                        </a>
+                    ))
+                }
             </div>
         </div>
     )

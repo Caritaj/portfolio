@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from "framer-motion";
 import { slideIn } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
+import { FaEnvelope } from 'react-icons/fa';
 
 const Contact = () => {
     return (
@@ -18,7 +19,7 @@ const Contact = () => {
                             </p>
 
                             <div className="flex items-center mt-2 text-gray-400">
-                                <p>Icon here!</p>
+                                <FaEnvelope className="w-6 h-6 mr-4" />
                                 <div className="ml-4 text-md tracking-wide w-40">
                                     <p>Rue Ccarita</p>
                                 </div>
@@ -26,20 +27,20 @@ const Contact = () => {
                         </div>
                     </motion.div>
                     <motion.div variants={slideIn("right", "tween", 0.2, 1)}>
-                        <form action="https://getform.io/f/raeqyvna" method='post' class='p-6 flex flex-col justify-center max-w-[700px]'>
+                        <form action="https://getform.io/f/raeqyvna" method='post' className='p-6 flex flex-col justify-center max-w-[700px]'>
                             <div className="flex flex-col">
-                                <input type="name" name='name' id='name' placeholder='Full Name' class='w-100 mt-2 py-3 px-3 rounded-lg bg-gray-800 border border-gray-700 text-white' />
+                                <input type="name" name='name' id='name' placeholder='Full Name' className='w-100 mt-2 py-3 px-3 rounded-lg bg-gray-800 border border-gray-700 text-white' />
                             </div>
 
                             <div className="flex flex-col">
-                                <input type="email" name='email' id='email' placeholder='Email' class='w-100 mt-2 py-3 px-3 rounded-lg bg-gray-800 border border-gray-700 text-white' />
+                                <input type="email" name='email' id='email' placeholder='Email' className='w-100 mt-2 py-3 px-3 rounded-lg bg-gray-800 border border-gray-700 text-white' />
                             </div>
 
                             <div className="flex flex-col">
-                                <textarea name='message' id='message' placeholder='Your Message' class='w-100 mt-2 py-3 px-3 rounded-lg bg-gray-800 border border-gray-700 text-white' />
+                                <textarea name='message' id='message' placeholder='Your Message' className='w-100 mt-2 py-3 px-3 rounded-lg bg-gray-800 border border-gray-700 text-white' />
                             </div>
 
-                            <button type='submit' class='md:w-32 bg-primary-color text-white py-3 px-6 rounded-lg mt-3'>Submit</button>
+                            <button type='submit' className='md:w-32 bg-primary-color text-white py-3 px-6 rounded-lg mt-3'>Submit</button>
                         </form>
                     </motion.div>
                 </div>

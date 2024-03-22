@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
+import { menuItems } from "../constants";
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
@@ -13,11 +14,13 @@ const Navbar = () => {
 
             <h1 className='w-full text-3xl font-bold primary-color ml-4'>R. Ccarita</h1>
             <ul className='hidden md:flex'>
-                <li className="p-5"><a href="#home">Home</a></li>
-                <li className="p-5"><a href="#about">About</a></li>
-                <li className="p-5"><a href="#work">Work</a></li>
-                <li className="p-5"><a href="#experience">Experience</a></li>
-                <li className="p-5"><a href="#contact">Contact</a></li>
+                {
+                    menuItems.map((item) => (
+                        <li className='p-5' key={item.id}>
+                            <a href={item.link}>{item.title}</a>
+                        </li>
+                    ))
+                }
             </ul>
             <div onClick={handleNav} className='block md:hidden'>
                 {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
@@ -27,11 +30,13 @@ const Navbar = () => {
                 : 'fixed left-[-100%]'}>
                 <h1 className='text-3xl primary-color-m-4'>R. Ccarita</h1>
                 <ul className='p-8 text-2xl'>
-                    <li className="p-2"><a href="#home">Home</a></li>
-                    <li className="p-2"><a href="#about">About</a></li>
-                    <li className="p-2"><a href="#work">Work</a></li>
-                    <li className="p-2"><a href="#experience">Experience</a></li>
-                    <li className="p-2"><a href="#contact">Contact</a></li>
+                    {
+                        menuItems.map((item) => (
+                            <li key={item.id} className='p-2'>
+                                <a href={item.link}>{item.title}</a>
+                            </li>
+                        ))
+                    }
                 </ul>
             </div>
         </div>
