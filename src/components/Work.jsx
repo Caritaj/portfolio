@@ -2,7 +2,8 @@ import React from 'react'
 import proj1 from '../assets/proj1.png'
 import proj2 from '../assets/proj2.png'
 import proj3 from '../assets/proj3.png'
-import proj4 from '../assets/proj4.png'
+import fondo1 from '../assets/fondo1.png'
+import fondo2 from '../assets/fondo2.png'
 
 const Work = () => {
     return (
@@ -25,13 +26,15 @@ const Work = () => {
                         object-cover object-center transition duration-200 group-hover:scale-110" />
                 </a>
 
-                <a href="/" className="group h-48 overflow-hidden rounded-lg shadow-lg md:col-span-2 md:h-80">
-                    <img src={proj4}alt="" className="h-full w-full 
+                <a href="https://sinia.minam.gob.pe/" target="_blank" rel="noreferrer"
+                    className="group h-48 overflow-hidden rounded-lg shadow-lg md:col-span-2 md:h-80">
+                    <img src={fondo1} alt="" className="h-full w-full 
                         object-cover object-center transition duration-200 group-hover:scale-110"/>
                 </a>
 
-                <a href="/" className="group h-48 overflow-hidden rounded-lg shadow-lg md:col-span-2 md:h-80">
-                    <img src={proj3} alt="" className="h-full w-full 
+                <a href="https://workflowproject.vercel.app/" target='_blank' rel='noreferrer'
+                    className="group h-48 overflow-hidden rounded-lg shadow-lg md:col-span-2 md:h-80">
+                    <img src={fondo2} alt="" className="h-full w-full 
                         object-cover object-center transition duration-200 group-hover:scale-110" />
                 </a>
 

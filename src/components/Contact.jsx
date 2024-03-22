@@ -5,11 +5,11 @@ import { SectionWrapper } from "../hoc";
 
 const Contact = () => {
     return (
-        <div className="flex justify-center my-5 h-full sm:h-[70vh] items-center bg-[#232325] overflow-x-hidden" id='contact'>
+        <div className="flex justify-center my-5 h-full sm:h-[70vh] mx-0 items-center bg-[#232325] overflow-x-hidden" id='contact'>
             <div className="w-[1500px]">
                 <div className="grid grid-cols-1 md:grid-cols-2 p-5">
                     <motion.div variants={slideIn("left", "tween", 0.2, 1)}>
-                        <div className="p-6 mr-2 bg-gray-800 rounded-xl flex flex-col justify-around">
+                        <div className="p-6 mr-2 bg-gray-800 h-[350px] rounded-xl flex flex-col justify-around">
                             <h1 className="text-4xl sm:text-5xl text-white">
                                 Contact <span>Me</span>
                             </h1>

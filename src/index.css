@@ -20,3 +20,7 @@ span,
 .bg-primary-color {
   background-image: linear-gradient(to right, #6b2b72, #a5079d);
 }
+
+.picture-hero {
+  mask-image: linear-gradient(black 50%, transparent);
+}

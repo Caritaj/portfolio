@@ -1,5 +1,5 @@
 import React from 'react'
-import aboutImg from '../assets/about4.jpeg'
+import about from '../assets/about.jpg'
 
 const About = () => {
     return (
@@ -8,7 +8,7 @@ const About = () => {
                 <div>
                     <div className="w-[400px] h-full">
                         <img
-                            src={aboutImg}
+                            src={about}
                             alt=""
                             className='object-cover rounded-xl h-[300px] filter grayscale brightness-50'
                         />
