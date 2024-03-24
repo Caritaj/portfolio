@@ -33,7 +33,7 @@ const About = () => {
 
                         <div className="flex mt-10 items-center gap-7">
                             <div className="bg-[#333333]/40 p-5 rounded-lg">
-                                <h3 className="md:text-4xl text-2xl font-semibold text-white">4
+                                <h3 className="md:text-4xl text-2xl font-semibold text-white">6
                                     <span className='primary-text'>+</span>{' '}
                                 </h3>
                                 <p><span className='md:text-base text-xs'>projects</span></p>
@@ -45,7 +45,7 @@ const About = () => {
                                 <p><span className='md:text-base text-xs'>year experience</span></p>
                             </div>
                             <div className="bg-[#333333]/40 p-5 rounded-lg">
-                                <h3 className="md:text-4xl text-2xl font-semibold text-white">10
+                                <h3 className="md:text-4xl text-2xl font-semibold text-white">12
                                     <span className='primary-text'>+</span>{' '}
                                 </h3>
                                 <p><span className='md:text-base text-xs'>happy clients</span></p>

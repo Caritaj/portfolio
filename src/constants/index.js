@@ -1,23 +1,35 @@
 import {
-    starbucks,
     tesla,
     ica,
     minam,
     fondo1,
     fondo2,
     fondo3,
-    proj2
+    fondo4,
+    gnsis,
+    angular,
+    css,
+    docker,
+    figma,
+    git,
+    html,
+    javascript,
+    nodejs,
+    reactjs,
+    redux,
+    tailwind,
+    typescript,
 } from "../assets";
 
 
 const experiences = [
 
     {
-        title: "Asistente Desarollador Web Frontend",
+        title: "Front End Web Developer Assistant",
         company_name: "Sotech",
         icon: tesla,
         iconBg: "#E6DEDD",
-        date: "Enero 2023 - Abril 2023",
+        date: "January 2023 - April 2023",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -26,42 +38,43 @@ const experiences = [
         ],
     },
     {
-        title: "Desarrollador FullStack",
+        title: "FullStack Developer Assistant",
         company_name: "Gnsis",
-        icon: starbucks,
+        icon: gnsis,
         iconBg: "#383E56",
-        date: "Mayo 2023 - Julio 2023",
+        date: "May 2023 - July 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Product stock management was improved through the implementation of product series, to have greater control over the products that are bought, sold and transferred between warehouses and stores.",
+            "The MySQL database was created and redesigned to adapt the requirement.",
+            "Updates and creation of new services were developed in the back with PHP 7.",
+            "The interfaces were redesigned, as well as the creation of new interfaces with Javascript, Ext JS and CSS.",
         ],
     },
     {
-        title: "Asistente Desarollador Web Frontend",
+        title: "Front End Web Developer Assistant",
         company_name: "Caja Ica",
         icon: ica,
         iconBg: "#383E56",
-        date: "Agosto 2023 - Diciembre 2023",
+        date: "August 2023 - March 2024",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Design and creation of user interfaces for the workflow platform.",
+            "Angular 12 and Tailwind to develop interactive and stylized components that integrate with the rest of the platform.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "UI integration with REST API.",
         ],
     },
     {
-        title: "Practicante Profesional",
-        company_name: "Ministerio del Ambiente",
+        title: "Professional practitioner",
+        company_name: "Ministry of the Environment",
         icon: minam,
         iconBg: "#E6DEDD",
-        date: "Octubre 2022 - Presente",
+        date: "October 2022 - Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "An interactive tool was created to visualize statistical indicators by themes and departments of Peru in the SINIA.",
+            "Angular 15 and Sass to design and create user interfaces",
+            "Design and creation of web pages in Drupal 9 with HTML5, CSS & Javascript",
+            "Design and creation of web pages (portals) with Wordpress.",
+            "INEA update (National Environmental Policy added) with PHP. Design and form with HTML5 & Sass."
         ],
     },
 ];
@@ -84,11 +97,16 @@ const menuItems = [
     },
     {
         id: 4,
+        title: 'Tech',
+        link: '#tech'
+    },
+    {
+        id: 5,
         title: 'Experience',
         link: '#experience'
     },
     {
-        id: 5,
+        id: 6,
         title: 'Contact',
         link: '#contact'
     },
@@ -120,9 +138,60 @@ const work = [
         id: 4,
         title: 'gnsis',
         link: 'https://github.com/Caritaj',
-        image: proj2,
+        image: fondo4,
         class: 'group h-48 overflow-hidden rounded-lg shadow-lg md:h-80',
     }
 ]
 
-export { experiences, menuItems, work };
+const technologies = [
+    {
+        name: "HTML 5",
+        icon: html,
+    },
+    {
+        name: "CSS 3",
+        icon: css,
+    },
+    {
+        name: "JavaScript",
+        icon: javascript,
+    },
+    {
+        name: "TypeScript",
+        icon: typescript,
+    },
+    {
+        name: "React JS",
+        icon: reactjs,
+    },
+    {
+        name: "Redux Toolkit",
+        icon: redux,
+    },
+    {
+        name: "Tailwind CSS",
+        icon: tailwind,
+    },
+    {
+        name: "Node JS",
+        icon: nodejs,
+    },
+    {
+        name: "git",
+        icon: git,
+    },
+    {
+        name: "figma",
+        icon: figma,
+    },
+    {
+        name: "Angular",
+        icon: angular,
+    },
+    {
+        name: "Docker",
+        icon: docker,
+    }
+];
+
+export { experiences, menuItems, work, technologies };
